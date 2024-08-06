@@ -3,6 +3,7 @@
     --main-color-2: #06920a;
     --main-color-1: #00B207;
     --color-while: #ffffff;
+    --color-light-grey: #DAE5DA;
     --color-dark: #1A1A1A;
     --color-grey: #808080;
     --color-yellow: #FF8A00;
@@ -14,5 +15,11 @@ body {
 
 /* 
  overflow-hidden 
-
 */
+.card:hover .eye {
+    transform: translateX(0);
+}
+
+.card:hover .heart {
+    transform: translatey(0);
+}

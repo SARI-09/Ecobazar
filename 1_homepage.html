@@ -23,7 +23,7 @@
     <title>FUCKING SHOP</title>
 </head>
 
-<body>
+<body class="cursor-default">
 
 
     <!------------ HEADER ------------>
@@ -56,7 +56,7 @@
 
                         <div class="ml-[12px]">
                             <div class="font-normal text-xs text-[#4D4D4D]"><span>Shopping cart:</span></div>
-                            <div class="font-medium text-sm text-[--color-dark]"><span>$57.00</span></div>
+                            <div class="font-medium text-sm text-[--color-dark]"><span>$0</span></div>
                         </div>
 
                     </div>
@@ -86,15 +86,19 @@
                             <i class="fa-solid fa-chevron-down" style="color: var(--color-while);"></i>
                         </div>
 
-                        <div class="text-[--main-color-1]">
-                            <span>Home</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
+                        <a href="./1_homepage.html">
+                            <div class="text-[--main-color-1]">
+                                <span>Home</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </a>
 
-                        <div class="text-[--color-grey]">
-                            <span>Shop</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
+                        <a href="./2_shop.html">
+                            <div class="text-[--color-grey]">
+                                <span>Shop</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </a>
 
                         <div class="text-[--color-grey]">
                             <span>Pages</span>
@@ -133,11 +137,14 @@
 
             <div>
 
-                <div class="d-flex">
+                <div class="d-flex gap-4">
 
                     <div class="relative">
-                        <div class="w-[796px] "><img src="./img/Image.png" alt="img"></div>
-                        <div class="w-[100px] absolute top-[160px] left-[655px]"><img src="./img/43.png" alt="img">
+                        <div class="2xl:w-[796px] xl:w-[750px]"><img class="w-[100%] h-[100%]"
+                                src="./img/products/Image.png" alt="img"></div>
+                        <div
+                            class="w-[95px] 2xl:w-[100px] xl:w-[95px] absolute top-[160px] left-[615px] 2xl:left-[655px] top-[160px] xl:left-[615px]">
+                            <img src="./img/43.png" alt="img">
                         </div>
                     </div>
 
@@ -145,7 +152,8 @@
                         <span class="text-lg font-normal text-[--main-color-1]">Welcome to shopery</span>
                         <h1 class="text-[56px] font-semibold text-[--color-dark]">Fresh & Healthy</h1>
                         <h1 class="text-[56px] font-semibold text-[--color-dark]">Organic Food</h1>
-                        <p class="font-normal text-lg text-[--main-color-3] mt-4 mb-8">Free shipping on all your order.
+                        <p class="font-normal text-lg text-[--main-color-3] mt-4 mb-8 xl:w-[350px] 2xl:w-[500px]">Free
+                            shipping on all your order.
                             we deliver, you enjoy</p>
                         <button
                             class="d-flex text-[--color-while] bg-[--main-color-1] gap-4 items-center py-4 px-5 rounded-[43px]">Shop
@@ -262,24 +270,23 @@
 
                     <div class="d-flex flex-wrap gap-1 justify-center">
 
-
-                        <div class="w-[330] h-[428px] border-2 hover:duration-500 duration-500 hover:border-[#20B52652] hover:shadow-[0px_0px_12px_0px_rgba(32,181,38)] hover:shadow-[--main-color-2] focus:border-[#20B52652] focus:shadow-[0px_0px_12px_0px_rgba(32,181,38)] focus:shadow-[--main-color-2]  
+                        <div class="card overflow-hidden w-[330] h-[428px] border-2 hover:duration-500 duration-500 hover:border-[#20B52652] hover:shadow-[0px_0px_12px_0px_rgba(32,181,38)] hover:shadow-[--main-color-2]   
                             ">
 
                             <div class="relative">
 
-                                <div><img class="w-[330px] h-[300px]" src="./img/apple.png" alt="img"></div>
+                                <div><img class="w-[330px] h-[300px]" src="./img/products/apple.png" alt="img"></div>
 
                                 <div>
                                     <div
-                                        class="w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-5 right-5 bg-[--color-while] translate-y-[-64px] hover:translate-y-[0px] duration-500 ">
+                                        class="heart cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-4 right-5 bg-[--color-while] translate-y-[-64px] duration-500 hover:bg-[--color-light-grey]">
                                         <div><i class="fa-regular fa-heart fa-1-5x"
                                                 style="color:var(--color-dark);"></i>
                                         </div>
                                     </div>
 
                                     <div
-                                        class="w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-[70px] right-5 bg-[--color-while] translate-x-[64px] hover:translate-x-[0px] duration-500 ">
+                                        class="eye cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-[70px] right-5 bg-[--color-while] translate-x-[64px] duration-500 hover:bg-[--color-light-grey]">
                                         <div><i class="fa-regular fa-eye fa-1-5x" style="color:var(--color-dark);"></i>
                                         </div>
                                     </div>
@@ -291,15 +298,325 @@
 
                                 <div>
                                     <p class="text-base text-[--main-color-1] font-normal">Green Apple</p>
-                                    <span class="font-normal text-lg text-[--color-dark]">$14.99</span>
-                                    <span class="font-medium text-base text-[--main-color-3] line-through">$20.99</span>
+                                    <span class="font-normal text-lg text-[--color-dark]">$29.99</span>
+                                    <span class="font-medium text-base text-[--main-color-3] line-through">14.99</span>
                                     <div class="mt-[14px]"><img class="w-[98px]" src="./img/Rating.png" alt="img"></div>
                                 </div>
 
                                 <div>
                                     <div
-                                        class="w-[50px] h-[50px] bg-[--main-color-1] rounded-full d-flex items-center justify-center">
-                                        <img class="w-[28px] h-[28px]" src="./img/Bag2.png" alt="imgа">
+                                        class="cursor-pointer w-[50px] h-[50px] border-2 duration-500 hover:bg-[--color-light-grey] bg-[--color-while] rounded-full d-flex items-center justify-center">
+                                        <img class="w-[28px] h-[28px]" src="./img/Bag.png" alt="imgа">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card overflow-hidden w-[330] h-[428px] border-2 hover:duration-500 duration-500 hover:border-[#20B52652] hover:shadow-[0px_0px_12px_0px_rgba(32,181,38)] hover:shadow-[--main-color-2]   
+                        ">
+
+                            <div class="relative">
+
+                                <div><img class="w-[330px] h-[300px]" src="./img/products/mango.png" alt="img"></div>
+
+                                <div>
+                                    <div
+                                        class="heart cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-4 right-5 bg-[--color-while] translate-y-[-64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-heart fa-1-5x"
+                                                style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="eye cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-[70px] right-5 bg-[--color-while] translate-x-[64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-eye fa-1-5x" style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="px-[20px] py-[20px] d-flex items-center justify-between">
+
+                                <div>
+                                    <p class="text-base text-[--main-color-1] font-normal">Surjapur Mango</p>
+                                    <span class="font-normal text-lg text-[--color-dark]">$29.99</span>
+                                    <span class="font-medium text-base text-[--main-color-3] line-through">14.99</span>
+                                    <div class="mt-[14px]"><img class="w-[98px]" src="./img/Rating.png" alt="img"></div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="cursor-pointer w-[50px] h-[50px] border-2 duration-500 hover:bg-[--color-light-grey] bg-[--color-while] rounded-full d-flex items-center justify-center">
+                                        <img class="w-[28px] h-[28px]" src="./img/Bag.png" alt="imgа">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card overflow-hidden w-[330] h-[428px] border-2 hover:duration-500 duration-500 hover:border-[#20B52652] hover:shadow-[0px_0px_12px_0px_rgba(32,181,38)] hover:shadow-[--main-color-2]   
+                        ">
+
+                            <div class="relative">
+
+                                <div><img class="w-[330px] h-[300px]" src="./img/products/tomato.png" alt="img"></div>
+
+                                <div>
+                                    <div
+                                        class="heart cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-4 right-5 bg-[--color-while] translate-y-[-64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-heart fa-1-5x"
+                                                style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="eye cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-[70px] right-5 bg-[--color-while] translate-x-[64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-eye fa-1-5x" style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="px-[20px] py-[20px] d-flex items-center justify-between">
+
+                                <div>
+                                    <p class="text-base text-[--main-color-1] font-normal">Red Tomatos</p>
+                                    <span class="font-normal text-lg text-[--color-dark]">$29.99</span>
+                                    <span class="font-medium text-base text-[--main-color-3] line-through">14.99</span>
+                                    <div class="mt-[14px]"><img class="w-[98px]" src="./img/Rating.png" alt="img"></div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="cursor-pointer w-[50px] h-[50px] border-2 duration-500 hover:bg-[--color-light-grey] bg-[--color-while] rounded-full d-flex items-center justify-center">
+                                        <img class="w-[28px] h-[28px]" src="./img/Bag.png" alt="imgа">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card overflow-hidden w-[330] h-[428px] border-2 hover:duration-500 duration-500 hover:border-[#20B52652] hover:shadow-[0px_0px_12px_0px_rgba(32,181,38)] hover:shadow-[--main-color-2]   
+                        ">
+
+                            <div class="relative">
+
+                                <div><img class="w-[330px] h-[300px]" src="./img/products/Cauliflower.png" alt="img">
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="heart cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-4 right-5 bg-[--color-while] translate-y-[-64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-heart fa-1-5x"
+                                                style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="eye cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-[70px] right-5 bg-[--color-while] translate-x-[64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-eye fa-1-5x" style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="px-[20px] py-[20px] d-flex items-center justify-between">
+
+                                <div>
+                                    <p class="text-base text-[--main-color-1] font-normal">Fresh Cauliflower</p>
+                                    <span class="font-normal text-lg text-[--color-dark]">$29.99</span>
+                                    <span class="font-medium text-base text-[--main-color-3] line-through">14.99</span>
+                                    <div class="mt-[14px]"><img class="w-[98px]" src="./img/Rating.png" alt="img"></div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="cursor-pointer w-[50px] h-[50px] border-2 duration-500 hover:bg-[--color-light-grey] bg-[--color-while] rounded-full d-flex items-center justify-center">
+                                        <img class="w-[28px] h-[28px]" src="./img/Bag.png" alt="imgа">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card overflow-hidden w-[330] h-[428px] border-2 hover:duration-500 duration-500 hover:border-[#20B52652] hover:shadow-[0px_0px_12px_0px_rgba(32,181,38)] hover:shadow-[--main-color-2]   
+                        ">
+
+                            <div class="relative">
+
+                                <div><img class="w-[330px] h-[300px]" src="./img/products/Lettuce.png" alt="img"></div>
+
+                                <div>
+                                    <div
+                                        class="heart cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-4 right-5 bg-[--color-while] translate-y-[-64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-heart fa-1-5x"
+                                                style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="eye cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-[70px] right-5 bg-[--color-while] translate-x-[64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-eye fa-1-5x" style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="px-[20px] py-[20px] d-flex items-center justify-between">
+
+                                <div>
+                                    <p class="text-base text-[--main-color-1] font-normal">Green Lettuce</p>
+                                    <span class="font-normal text-lg text-[--color-dark]">$29.99</span>
+                                    <span class="font-medium text-base text-[--main-color-3] line-through">14.99</span>
+                                    <div class="mt-[14px]"><img class="w-[98px]" src="./img/Rating.png" alt="img"></div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="cursor-pointer w-[50px] h-[50px] border-2 duration-500 hover:bg-[--color-light-grey] bg-[--color-while] rounded-full d-flex items-center justify-center">
+                                        <img class="w-[28px] h-[28px]" src="./img/Bag.png" alt="imgа">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card overflow-hidden w-[330] h-[428px] border-2 hover:duration-500 duration-500 hover:border-[#20B52652] hover:shadow-[0px_0px_12px_0px_rgba(32,181,38)] hover:shadow-[--main-color-2]   
+                        ">
+
+                            <div class="relative">
+
+                                <div><img class="w-[330px] h-[300px]" src="./img/products/bell-pepper.png" alt="img">
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="heart cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-4 right-5 bg-[--color-while] translate-y-[-64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-heart fa-1-5x"
+                                                style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="eye cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-[70px] right-5 bg-[--color-while] translate-x-[64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-eye fa-1-5x" style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="px-[20px] py-[20px] d-flex items-center justify-between">
+
+                                <div>
+                                    <p class="text-base text-[--main-color-1] font-normal">bell pepper</p>
+                                    <span class="font-normal text-lg text-[--color-dark]">$29.99</span>
+                                    <span class="font-medium text-base text-[--main-color-3] line-through">14.99</span>
+                                    <div class="mt-[14px]"><img class="w-[98px]" src="./img/Rating.png" alt="img"></div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="cursor-pointer w-[50px] h-[50px] border-2 duration-500 hover:bg-[--color-light-grey] bg-[--color-while] rounded-full d-flex items-center justify-center">
+                                        <img class="w-[28px] h-[28px]" src="./img/Bag.png" alt="imgа">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card overflow-hidden w-[330] h-[428px] border-2 hover:duration-500 duration-500 hover:border-[#20B52652] hover:shadow-[0px_0px_12px_0px_rgba(32,181,38)] hover:shadow-[--main-color-2]   
+                        ">
+
+                            <div class="relative">
+
+                                <div><img class="w-[330px] h-[300px]" src="./img/products/Chilli.png" alt="img"></div>
+
+                                <div>
+                                    <div
+                                        class="heart cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-4 right-5 bg-[--color-while] translate-y-[-64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-heart fa-1-5x"
+                                                style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="eye cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-[70px] right-5 bg-[--color-while] translate-x-[64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-eye fa-1-5x" style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="px-[20px] py-[20px] d-flex items-center justify-between">
+
+                                <div>
+                                    <p class="text-base text-[--main-color-1] font-normal">Green Chilli</p>
+                                    <span class="font-normal text-lg text-[--color-dark]">$29.99</span>
+                                    <span class="font-medium text-base text-[--main-color-3] line-through">14.99</span>
+                                    <div class="mt-[14px]"><img class="w-[98px]" src="./img/Rating.png" alt="img"></div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="cursor-pointer w-[50px] h-[50px] border-2 duration-500 hover:bg-[--color-light-grey] bg-[--color-while] rounded-full d-flex items-center justify-center">
+                                        <img class="w-[28px] h-[28px]" src="./img/Bag.png" alt="imgа">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card overflow-hidden w-[330] h-[428px] border-2 hover:duration-500 duration-500 hover:border-[#20B52652] hover:shadow-[0px_0px_12px_0px_rgba(32,181,38)] hover:shadow-[--main-color-2]   
+                        ">
+
+                            <div class="relative">
+
+                                <div><img class="w-[330px] h-[300px]" src="./img/products/Eggplant.png" alt="img"></div>
+
+                                <div>
+                                    <div
+                                        class="heart cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-4 right-5 bg-[--color-while] translate-y-[-64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-heart fa-1-5x"
+                                                style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="eye cursor-pointer w-11 h-11 border-2 rounded-full flex justify-center items-center absolute top-[70px] right-5 bg-[--color-while] translate-x-[64px] duration-500 hover:bg-[--color-light-grey]">
+                                        <div><i class="fa-regular fa-eye fa-1-5x" style="color:var(--color-dark);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="px-[20px] py-[20px] d-flex items-center justify-between">
+
+                                <div>
+                                    <p class="text-base text-[--main-color-1] font-normal">Eggplant</p>
+                                    <span class="font-normal text-lg text-[--color-dark]">$29.99</span>
+                                    <span class="font-medium text-base text-[--main-color-3] line-through">14.99</span>
+                                    <div class="mt-[14px]"><img class="w-[98px]" src="./img/Rating.png" alt="img"></div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="cursor-pointer w-[50px] h-[50px] border-2 duration-500 hover:bg-[--color-light-grey] bg-[--color-while] rounded-full d-flex items-center justify-center">
+                                        <img class="w-[28px] h-[28px]" src="./img/Bag.png" alt="imgа">
                                     </div>
                                 </div>
 
